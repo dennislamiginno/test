@@ -18,8 +18,13 @@ Fleet Management system
 ### Installation
 * Open the 'frontend' folder in Visual Studio Code.
 * Enter the following commands to use the package manager npm to install packages.<br />
-  `npm install`
-* Enter the following commands to start the server. <br />`npm run serve`
+```shell
+npm install
+```
+* Enter the following commands to start the server.
+```shell
+npm run serve
+```
 * You can read the 'scripts' property in the package.json file to check commands for Vue.js.
 
 ## Database
@@ -33,10 +38,15 @@ Fleet Management system
 * Install PostgreSql on ubuntu. Follow the [instruction](https://protocoderspoint.com/config-postgresql-remote-connection-access-using-pgadmin/)
   to set a password for PostgreSql and enable PostgreSql remote connection.
 * Enter the following commands to install the net-tools package.<br />
-  `sudo apt-get update`<br />
-  `sudo apt-get -y install net-tools`<br />
-  `sudo apt-get upgrade`
-* Enter `ifconfig` to check ubuntu's IP address on the ubuntu server.
+```shell
+sudo apt-get update
+sudo apt-get -y install net-tools
+sudo apt-get upgrade
+```
+* Enter the following commands to check ubuntu's IP address on the ubuntu server.
+```shell
+ifconfig
+```
 * Stop the ubuntu server. Click 'Setting' -> 'Network', change 'Attached to' to 'Host-only Adapter'.
 * Open PgAdmin, right click server -> register -> create server -> enter 'postgres' in 'name'.
 * Click 'Connection', enter your ubuntu IP address in 'Host name/address' and enter the PostgreSql password you set.
